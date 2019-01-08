@@ -1,3 +1,4 @@
+import { Salesman } from './salesman';
 // Déclaration d'une variable toujours avec let.
 let myName: string = 'jérémy';
 
@@ -31,3 +32,9 @@ start(myName);
 let jeremy = new Person("jérémy");
 let jmasson = new Person("jérémy", "masson");
 let michel = new Person("michel", "Dupont", 40);
+
+let e = new Salesman('jeremy', 'masson', 18, '2000', 20000);
+// Appel des attributs de l'instance e :
+console.log('Prénom : ' + e.firstname);
+// Appel du getter (pas de parenthèses !) :
+console.log('Nom complet : ' + e.name);
